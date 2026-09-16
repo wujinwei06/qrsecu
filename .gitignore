@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+.next-*/
+out/
+
+# Vercel
+.vercel
+
+# Env files
+.env
+.env*.local
+.dev.vars
+.dev.vars.*
+
+# IDE
+.vscode/
+.idea/
+
+# Misc
+.DS_Store
+*.log
+*.tmp
+.git_tmp_tree_input
+.gitignore.bak
+
+# Sensitive files (keys, secrets)
+密匙.txt
+密钥.txt
+*.key
+*.pem

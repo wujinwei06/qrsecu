@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  
+  body {
+    @apply bg-gray-100 text-gray-900;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Inter', system-ui, 'Helvetica Neue', Arial, sans-serif;
+    letter-spacing: -0.01em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.02em;
+    font-weight: 600;
+  }
+
+  ::selection {
+    @apply bg-primary-600/15;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-full transition-all duration-300 ease-apple shadow-apple-blue hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98];
+  }
+  
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-100 text-primary-600 font-medium py-3 px-6 rounded-full border border-gray-200 transition-all duration-300 ease-apple hover:border-gray-300 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98];
+  }
+
+  .btn-ghost {
+    @apply text-primary-600 hover:bg-primary-50 font-medium rounded-full transition-all duration-300 ease-apple;
+  }
+  
+  .card {
+    @apply bg-white rounded-apple-lg border border-gray-200/70 p-6 hover:shadow-apple-md hover:border-gray-300/60 transition-all duration-500 ease-apple;
+  }
+  
+  .section-title {
+    @apply text-headline text-center text-gray-900 mb-4;
+  }
+  
+  .section-subtitle {
+    @apply text-gray-500 text-center max-w-2xl mx-auto mb-12 text-lg font-normal leading-relaxed;
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+  }
+}
